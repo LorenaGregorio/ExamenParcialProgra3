@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExamenParcialProgra3.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace ExamenParcialProgra3.Interfaces
 {
     public interface IOperaciones
     {
-        void Agregar
+        void AgregarColordeEquipo(Datos datos);
+        void AgregarTipodeMonitor(string TipodeEquipo);
+
     }
 }

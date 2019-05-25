@@ -9,6 +9,23 @@ namespace ExamenParcialProgra3.Clases
 {
     public class Datos : IOperaciones
     {
+
+        public List<Datos> CargarDatos = new List<Datos>();
+        public void AgregarCaracteristicas(Datos datos)
+        {
+            CargarDatos.Add(datos);
+        }
+
+        public void AgregarColordeEquipo(Datos datos)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AgregarTipodeMonitor(string TipodeEquipo)
+        {
+            throw new NotImplementedException();
+        }
+
         //encapsulamiento
         private int Id;
         private string NombreEmpleado;
