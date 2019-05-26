@@ -12,5 +12,8 @@ namespace ExamenParcialProgra3.Interfaces
         void AgregarColordeEquipo(Datos datos);
         void AgregarTipodeMonitor(string TipodeEquipo);
 
+        void EliminarColordeEquipo(Datos datos);
+        void EliminarTipodeMonitor(string TipodeEquipo);
+
     }
 }

@@ -26,6 +26,16 @@ namespace ExamenParcialProgra3.Clases
             throw new NotImplementedException();
         }
 
+        public void EliminarColordeEquipo(Datos datos)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EliminarTipodeMonitor(string TipodeEquipo)
+        {
+            throw new NotImplementedException();
+        }
+
         //encapsulamiento
         private int Id;
         private string NombreEmpleado;

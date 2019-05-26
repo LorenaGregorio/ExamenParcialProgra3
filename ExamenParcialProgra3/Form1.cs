@@ -23,8 +23,7 @@ namespace ExamenParcialProgra3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //llamo al metodo actualizargrid
-            this.ActualizarGrid();
+          
         }
 
 
@@ -59,7 +58,7 @@ namespace ExamenParcialProgra3
 
             //Se crea una consulta para insertar los datos (Guardar)
             string consulta = "insert into DatosTBL (Id,NombreEmpleado,TipodeEquipo,Marca,Procesador,DiscoDuro,SistemaOperativo) " +
-                "values (" + d.id + ", '" + d.nombreempleado + "','" + d.tipodeequipo + "','" + d.marca + "','" + d.procesador + "'," + d.discoduro + ",'" + d.sistemaoperativo + "' );";
+                "values (" + d.id + ", '" + d.nombreempleado + "','" + d.tipodeequipo + "','" + d.marca + "','" + d.procesador + "','" + d.discoduro + "','" + d.sistemaoperativo + "' );";
 
             //con esta funcion ejecuto la consulta de arriba en codigo sql
             con.EjecutarSql(consulta);
@@ -70,7 +69,8 @@ namespace ExamenParcialProgra3
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            
+            //llamo al metodo actualizargrid
+            this.ActualizarGrid();
 
         }
     }
