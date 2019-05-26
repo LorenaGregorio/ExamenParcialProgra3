@@ -4,37 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ExamenParcialProgra3.Clases
 {
     public class Datos : IOperaciones
     {
 
-        public List<Datos> CargarDatos = new List<Datos>();
-        public void AgregarCaracteristicas(Datos datos)
-        {
-            CargarDatos.Add(datos);
-        }
-
-        public void AgregarColordeEquipo(Datos datos)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AgregarTipodeMonitor(string TipodeEquipo)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void EliminarColordeEquipo(Datos datos)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void EliminarTipodeMonitor(string TipodeEquipo)
-        {
-            throw new NotImplementedException();
-        }
+         
 
         //encapsulamiento
         private int Id;
@@ -44,6 +21,7 @@ namespace ExamenParcialProgra3.Clases
         private string Procesador;
         private string DiscoDuro;
         private string SistemaOperativo;
+
 
         //constructor
         public Datos(int Id, string NombreEmpleado, string TipodeEquipo, string Marca, string Procesador, string DiscoDuro, string SistemaOperativo)
@@ -143,5 +121,14 @@ namespace ExamenParcialProgra3.Clases
                 SistemaOperativo = value;
             }
         }
+
+        public string busqueda(string consulta)
+        {
+            
+            return consulta;
+        }
+
+       
+       
     }
 }

@@ -9,11 +9,8 @@ namespace ExamenParcialProgra3.Interfaces
 {
     public interface IOperaciones
     {
-        void AgregarColordeEquipo(Datos datos);
-        void AgregarTipodeMonitor(string TipodeEquipo);
-
-        void EliminarColordeEquipo(Datos datos);
-        void EliminarTipodeMonitor(string TipodeEquipo);
+        string busqueda( string consulta);
+        
 
     }
 }
